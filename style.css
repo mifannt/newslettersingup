@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+}
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_user{
+    color: hsl(234, 29%, 20%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    width: 380px;
+    height: 450px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.login_user h1{
+    font-size: 40px;
+    margin: 0px;
+}
+.login_user_subt{
+    width: 300px;
+}
+.login_user_advans{
+    width: 300px;
+    font-size: 13px;
+    display: flex;
+    justify-content: start;
+}
+.login_user_advans p{
+    margin-left: 5px;
+}
+.input_titles{
+    width: 300px;
+    display: flex;
+}
+.login_user_input_title{
+    width: 300px;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(234, 29%, 20%);
+}
+.login_user_input_title_invalid{
+    display: none;
+}
+.login_user_input_title_showinvalid{
+    margin: 2px;
+    width: 300px;
+    padding-left: 5px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(4, 100%, 67%);
+}
+.login_user_input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.login_user_input_error{
+    width: 300px;
+    height: 40px;
+    border: 1px solid hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 67%, 0.2);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.login_user_input_error::placeholder{
+    color: hsl(4, 100%, 67%);
+}
+.login_user_btn{
+    width: 300px;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.login_user_btn:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+.login_image{
+    background-color: hsl(0, 0%, 100%);
+    width: 380px;
+    height: 450px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_image_img{
+    width:90%;
+    height:90%;
+}
+
+/* SECTION SUCCES CARDS */
+
+.success_section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+.success_card{
+    width: 350px;
+    height: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.success_card img{
+    width: 13%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.success_card h1{
+    margin: 10px;
+    font-size: 40px;
+}
+.success_card p{
+    width: 80%;
+    margin: 0;
+    font-size: 12px;
+}
+.email_acount{
+    font-weight: bold;
+}
+.success_card button{
+    width: 280px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+}
+.success_card button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+@media only screen and (max-width: 620px) {
+    .login{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .login_user {
+        width: 375px;
+        height: 500px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .login_image{
+        width: 375px;
+        height: 300px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .login_image_img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+    .success_section{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .success_card{
+        width: 350px;
+        height: 600px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .success_card p{
+        width: 80%;
+        margin: 0;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 190px;
+    }
+}
